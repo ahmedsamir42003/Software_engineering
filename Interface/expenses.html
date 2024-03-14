@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>الايرادات</title>
+    <title>المصروفات</title>
   </head>
   <body onload="preloader()">
     <!-- <div id="preloader">
@@ -45,12 +45,12 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="income.html"
+              <a class="nav-link" href="income.html"
                 ><i class="fal fa-info"></i> العائد اليومي</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="expenses.html"
+              <a class="nav-link active" href="expenses.html"
                 ><i class="fal fa-info"></i> المصروفات</a
               >
             </li>
@@ -124,8 +124,12 @@
           <div class="add-transaction">
             <input type="number" id="price" placeholder="السعر" autofocus />
             <select name="type" id="type" title="Type">
-              <option value="papers">ورق</option>
-              <option value="products">منتجات</option>
+              <option value="papers">مصروفات شخصية</option>
+              <option value="products">مصروفات نثرية</option>
+              <option value="products">مصروفات صيانة</option>
+              <option value="products">مصروفات قطع غيار</option>
+              <option value="products">مصروفات ورق</option>
+              <option value="products">مصروفات أحبار</option>
             </select>
             <input type="submit" value="اضافة" id="add" />
           </div>

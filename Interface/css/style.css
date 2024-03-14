@@ -398,7 +398,7 @@ td {
   display: flex;
   align-items: center;
 }
-input {
+input, select {
   border: none;
   border-radius: 5px;
   padding: 10px;
