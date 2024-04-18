@@ -257,7 +257,7 @@ body {
   height: 400px;
   width: 500px;
   border-radius: 5px;
-  /* background-color: white; */
+  font-size: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -283,14 +283,14 @@ body {
 }
 
 /* analysis*/
-
 .month-bar {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
   overflow-x: scroll;
-  padding: 2px 0px;
+  /* padding: 2px 0px; */
+  height: 55px;
 }
 .month-bar p {
   padding: 2px 5px;
@@ -316,16 +316,46 @@ body {
   background: var(--shadow-color);
   border-radius: 15px;
 }
+.month-profit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.month-profit div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-direction: column;
+}
+.profit-num {
+  background-color: var(--white-lit-color);
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid var(--shadow-color);
+}
 .days-table {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
-  height: 368px;
-  overflow-y: scroll;
+  /* margin-top: 30px; */
+  height: 300px;
+  /* overflow-y: scroll; */
+  overflow: scroll;
   width: 100%;
+  /* overflow-x: scroll; */
 }
 .days-table::-webkit-scrollbar {
-  display: none;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+}
+.days-table::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.days-table::-webkit-scrollbar-thumb {
+  background-color: var(--shadow-color);
+  border-radius: 15px;
 }
 .day-row {
   display: flex;
@@ -333,7 +363,7 @@ body {
 }
 .day-row p {
   /* width: 150px; */
-  width: 100%;
+  min-width: 20%;
   text-align: right;
   border-color: var(--shadow-color);
   border-width: 3px;
@@ -342,13 +372,14 @@ body {
   padding: 0;
   margin: 0;
   font-size: 18px;
-  padding: 5px 0;
+  padding: 5px;
 }
 .amount-analysis {
-  margin: 0px auto;
+  margin: 10px auto;
   width: fit-content;
   text-align: center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  height: 70px;
   color: var(--shadow-color);
   font-size: 20px;
 }
@@ -398,7 +429,8 @@ td {
   display: flex;
   align-items: center;
 }
-input, select {
+input,
+select {
   border: none;
   border-radius: 5px;
   padding: 10px;
