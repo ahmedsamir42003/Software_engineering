@@ -56,7 +56,7 @@
             </li>
           </ul>
         </div>
-        <div class="money-section col-md-9">
+        <div class="money-section col-md-9" id="money-section-2">
           <div class="scroll-wrapper">
             <table class="data-table">
               <thead>
@@ -66,72 +66,20 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Data 1A</td>
-                  <td>Data 2A</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
-                <tr>
-                  <td>Data 1B</td>
-                  <td>Data 2B</td>
-                </tr>
               </tbody>
             </table>
           </div>
           <div class="add-transaction">
-            <input type="number" id="price" placeholder="السعر" autofocus />
-            <select name="type" id="type" title="Type">
-              <option value="papers">مصروفات شخصية</option>
-              <option value="products">مصروفات نثرية</option>
-              <option value="products">مصروفات صيانة</option>
-              <option value="products">مصروفات قطع غيار</option>
-              <option value="products">مصروفات ورق</option>
-              <option value="products">مصروفات أحبار</option>
+            <input type="number" class="price" placeholder="السعر" autofocus />
+            <select name="type" class="type" title="Type">
+              <option value="مصروفات شخصية">مصروفات شخصية</option>
+              <option value="مصروفات نثرية">مصروفات نثرية</option>
+              <option value="مصروفات صيانة">مصروفات صيانة</option>
+              <option value="مصروفات قطع غيار">مصروفات قطع غيار</option>
+              <option value="مصروفات ورق">مصروفات ورق</option>
+              <option value="مصروفات أحبار">مصروفات أحبار</option>
             </select>
-            <input type="submit" value="اضافة" id="add" />
+            <input type="submit" value="اضافة" class="add" />
           </div>
         </div>
       </div>
@@ -150,5 +98,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="js/custom-function.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
